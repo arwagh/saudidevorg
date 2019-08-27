@@ -1,25 +1,16 @@
-x = int(1)
-y = int(2.8)
-z = int("3")
+a = "Hello"
+b = 'Hello'
 
-print(x)
-print(y)
-print(z)
+print(a)
+print(b)
 
-x = float(1)
-y = float(2.8)
-z = float("3")
-w = float("4.2")
+a = """This is
+multiple lines
+code in Python
+"""
+print(a)
 
-print(x)
-print(y)
-print(z)
-print(w)
+a = "Hello, World!"
 
-x = str("s1")
-y = str(2)
-z = str(3.0)
-
-print(x)
-print(y)
-print(z)
+print(a[1])
+print(a[2:5])
