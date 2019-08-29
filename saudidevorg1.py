@@ -1,8 +1,10 @@
-a = " Hello, World!"
+quantity = 3
+itemNo = 567
+price = 49.95
 
-print(a.strip())
-print(len(a))
-print(a.lower())
-print(a.upper())
-print(a.replace("H", "J"))
-print(a.split(","))
+myOrder = "I want to pay {2} dollars for {0} pieces of item {1}"
+
+print(myOrder.format(quantity, itemNo, price))
+
+text = "My age is {}"
+print(text.format(100))
