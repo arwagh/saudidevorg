@@ -1,10 +1,14 @@
-quantity = 3
-itemNo = 567
-price = 49.95
+x = 4
+y = 5
 
-myOrder = "I want to pay {2} dollars for {0} pieces of item {1}"
+print(x+y)
+print(x-y)
+print(x*y)
+print(x/y)
+print(x**y)
+print(x//y)
 
-print(myOrder.format(quantity, itemNo, price))
-
-text = "My age is {}"
-print(text.format(100))
+x += 4
+print(x)
+x <<= 4
+print(x)
