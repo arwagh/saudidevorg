@@ -1,5 +1,12 @@
-text = "Please, I want {} sandwishes {} dountes"
+numbersList = [1,2,3,4,5]
+print(numbersList)
+print(numbersList[0])
+print(numbersList[1])
+print(numbersList[-1])
 
-text2 = text.replace("I", "We") and text.replace("a", "A");
+numbersList[2] = 12
+for x in numbersList:
+    print(x)
 
-print(text2.format(5, 7))
+del numbersList[0]
+print(numbersList[0])
