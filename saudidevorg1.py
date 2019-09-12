@@ -1,29 +1,12 @@
-list1 = [1,2,3,4]
+thisTuple = (1,2,3,4)
+print(thisTuple)
+thisTuple = ()
+print(thisTuple)
+thisTuple = (3.1,4,5,"Python")
+print(thisTuple)
+print(thisTuple[0])
 
-newList = list1.copy()
+for x in thisTuple:
+    print(x)
 
-print(newList)
-
-list1.pop(0)
-
-print(list1)
-print(newList)
-
-newList = list1
-
-list1.pop(0)
-print(list1)
-print(newList)
-
-list1.insert(0,1)
-list1.insert(1,2)
-print(list1)
-
-
-newList = list(list1)
-list1.pop(0)
-print(newList)
-
-newList = list((1,2,3,4,5))
-
-print(newList)
+print(thisTuple[0:4])
