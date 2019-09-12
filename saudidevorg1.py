@@ -1,25 +1,22 @@
-thisSet = {1,'a',4,'python', 100}
+thisDict = {1:"a",
+            2:"b"}
+print(thisDict)
+print(thisDict[1])
+print(thisDict.get(1))
 
-print(thisSet)
+thisDict[1] = 'c'
 
-for x in thisSet:
+print(thisDict)
+
+
+for x in thisDict:
     print(x)
 
-thisSet.update([123,212,'ABC'])
+for x in thisDict:
+    print(thisDict[x])
 
-print(thisSet)
+for x in thisDict.values():
+    print(x)
 
-print(len(thisSet))
-
-thisSet.remove(123)
-thisSet.discard(212)
-
-print(thisSet)
-
-thisSet.pop()
-
-print(thisSet)
-
-thisSet.clear()
-
-print(thisSet)
+for x, y in thisDict.items():
+    print(x, y)
