@@ -32,14 +32,33 @@ thisDict[3] = "d"
 
 print(thisDict)
 
-#thisDict.pop(2)
+thisDict.pop(2)
 
-print(thisDict)
+#print(thisDict)
 
 thisDict.popitem()
 
-print(thisDict)
+#print(thisDict)
 
 del thisDict[1]
 
-print(thisDict)
+#print(thisDict)
+
+newDict = thisDict.copy()
+#print(newDict)
+
+employees = {
+"staff1": {
+"name" : "Arwa",
+"year" : "2019"
+},
+"staff2" : {
+"name" : "Maryam",
+"year" : "2018"
+}
+}
+
+print(employees)
+
+newestDict = dict(name = "Arwa", year = "2019", job = "Programmer")
+print(newestDict)
