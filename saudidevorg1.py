@@ -24,3 +24,15 @@ for x in "python":
     if (x=="h"):
         continue
     print(x)
+
+for x in range(80,101,2):
+    print(x*2)
+else:
+    print("finished for loop")
+
+adj = ["red", "big", "tasty"]
+fruits = ["apple", "banana", "cherry"]
+
+for x in adj:
+    for y in fruits:
+        print(x, y)
