@@ -1,38 +1,6 @@
-i = 5
-j = 4
-while(i < 9):
-    i+=1
-    if(i==7):
-        continue
-    print(i)
-else:
-    print("finished looping")
+def my_function(name = "non"):
+    print("Hello " + name)
 
-thisList = ["a","b","c","d"]
-print(type(thisList))
-thisTuple = ("a",1,2,3)
-print(type(thisTuple))
-thisSet = {1,2,4,4}
-print(type(thisSet))
-thisDictionary = {1:"a",}
-print(type(thisDictionary))
 
-for x in thisSet:
-    print(x)
-
-for x in "python":
-    if (x=="h"):
-        continue
-    print(x)
-
-for x in range(80,101,2):
-    print(x*2)
-else:
-    print("finished for loop")
-
-adj = ["red", "big", "tasty"]
-fruits = ["apple", "banana", "cherry"]
-
-for x in adj:
-    for y in fruits:
-        print(x, y)
+my_function()
+my_function("Arwa")
