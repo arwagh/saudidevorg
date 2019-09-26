@@ -15,4 +15,3 @@ parsing (4) to lambda (my_doubler)
 
 print(my_doubler(4))
 print(my_tripler(4))
-print("a")
