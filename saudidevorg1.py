@@ -1,17 +1,11 @@
-def my_func(n):
-    return lambda a:a*n
+cars = ["Ford", "Volvo", "BMW"]
 
 
-"""
-this is (my_doubler) is now considred lambda
-"""
-my_doubler = my_func(2)
-my_tripler = my_func(3)
+print(cars)
+print(type(cars))
 
-"""
-parsing (4) to lambda (my_doubler)
-مرة نضاعف الرقم، مرة 3 أضعاف
-"""
+cars[0] = "Toyota"
+x = cars[0]
 
-print(my_doubler(4))
-print(my_tripler(4))
+print(x)
+print(len(cars))
