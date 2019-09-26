@@ -1,11 +1,16 @@
 cars = ["Ford", "Volvo", "BMW"]
 
+for x in cars:
+    print(x)
+
+cars.append("Honda")
 
 print(cars)
-print(type(cars))
 
-cars[0] = "Toyota"
-x = cars[0]
+cars.pop(1)
 
-print(x)
-print(len(cars))
+print(cars)
+
+cars.remove('BMW')
+
+print(cars)
