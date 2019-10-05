@@ -9,14 +9,15 @@ class Person:
 
 
 class Student(Person):
-    def __init__(self, fname, lname, age):
-        Person.__init__(self,fname,lname)
-        self.age=age
+    def __init__(self, fname, lname, year):
+        super().__init__(fname,lname)
+        self.graduationyear=year
+    def welcome(self):
+        print("Welcome", self.firstname,self.lastname,"to the class of", self.graduationyear)
 
-    def printage():
-        print(age)
-
-y=Student("Sara", "Ahmad", 5)
+y=Student("Sara", "Ahmad", 2019)
 
 y.printname()
-print(y.age)
+
+print(y.graduationyear)
+y.welcome()
