@@ -1,20 +1,22 @@
 class Person:
-    def __init__(self, name, age):
-        self.name=name
+    def __init__(self, fname, lname):
+        self.firstname=fname
+        self.lastname=lname
+
+    def printname(self):
+        print(self.firstname,self.lastname)
+
+
+
+class Student(Person):
+    def __init__(self, fname, lname, age):
+        Person.__init__(self,fname,lname)
         self.age=age
 
-    def myfunc(self):
-        print("Hello my name is " + self.name)
+    def printage():
+        print(age)
 
+y=Student("Sara", "Ahmad", 5)
 
-
-p1 = Person("John", 36)
-p1.myfunc()
-
-p1.age=40
-print(p1.age)
-
-del p1.age
-
-del p1
-print(p1.myfunc())
+y.printname()
+print(y.age)
