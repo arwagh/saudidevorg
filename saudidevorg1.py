@@ -1,16 +1,12 @@
-cars = ["Ford", "Volvo", "BMW"]
+class Person:
+    def __init__(self, name, age):
+        self.name=name
+        self.age=age
 
-for x in cars:
-    print(x)
+    def myfunc(abc):
+        print("Hello my name is " + abc.name)
 
-cars.append("Honda")
 
-print(cars)
 
-cars.pop(1)
-
-print(cars)
-
-cars.remove('BMW')
-
-print(cars)
+p1 = Person("John", 36)
+p1.myfunc()
