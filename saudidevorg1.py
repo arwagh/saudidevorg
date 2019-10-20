@@ -1,23 +1,37 @@
-class Person:
-    def __init__(self, fname, lname):
-        self.firstname=fname
-        self.lastname=lname
+class MyNumbers:
+    def __iter__(self):
+        self.a=1
+        return self
+    def __next__(self):
+        if self.a<=20:
+            x=self.a
+            self.a+=15
+            return x
+        else:
+            raise StopIteration
 
-    def printname(self):
-        print(self.firstname,self.lastname)
 
 
+myClass = MyNumbers();
+myIter=iter(myClass)
 
-class Student(Person):
-    def __init__(self, fname, lname, year):
-        super().__init__(fname,lname)
-        self.graduationyear=year
-    def welcome(self):
-        print("Welcome", self.firstname,self.lastname,"to the class of", self.graduationyear)
+print(next(myIter))
+print(next(myIter))
 
-y=Student("Sara", "Ahmad", 2019)
+my_tuple = ("apple","banana","cherry")
+myit = iter(my_tuple)
 
-y.printname()
+#print(next(myit))
+#print(next(myit))
 
-print(y.graduationyear)
-y.welcome()
+#mystr = "banana"
+#myit = iter(mystr)
+
+#print(next(myit))
+#print(next(myit))
+
+#for x in my_tuple:
+#    print(x)
+
+#for x in mystr:
+#    print(x)
