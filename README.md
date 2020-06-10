@@ -1,2 +1,2 @@
 "# saudidevorg" 
-Codes and exercies implemented during saudidevorg Python initiative.
+Code and exercies implemented during saudidevorg Python initiative.
