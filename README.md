@@ -1,2 +1,2 @@
 # About
-Code and exercies implemented during saudidevorg Python initiative.
+Code and exercises implemented during saudidevorg Python initiative.
